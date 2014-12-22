@@ -21,15 +21,20 @@
 ;; Show info at echo area
 (eldoc-mode 1)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(quack-default-program "mit-scheme"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(ido-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+
+;; Indentation (global)
+(define-key global-map (kbd "RET") 'newline-and-indent)
+(setq indent-tabs-mode nil)
+(setq tab-width 8)
+
+;; Indentation (C)
+(setq c-indent-level 8)
+
+(setq c-brace-imaginary-offset 0)
+(setq c-brace-offset -8)
+(setq c-argdecl-indent 8)
+(setq c-label-offset -8)
+(setq c-continued-statement-offset 8)
