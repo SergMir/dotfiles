@@ -3,6 +3,9 @@
 
 (load-theme 'tango-dark t)
 
+;; Map C-h to backspace
+(global-set-key [(control h)] 'delete-backward-char)
+
 ;; Line numbers
 (global-linum-mode 1)
 (setq linum-format "%4d")
