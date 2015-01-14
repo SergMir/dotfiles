@@ -53,3 +53,6 @@
 (setq mouse-wheel-follow-mouse 't)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 
+;; whitespace-mode
+;(global-whitespace-mode t)
+;(setq whitespace-style '(trailing tabs tab-mark space-after-tab space-before-tab indentation))
