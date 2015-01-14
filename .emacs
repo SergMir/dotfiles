@@ -1,3 +1,5 @@
+;; Common Lisp
+(require 'cl)
 
 (load-theme 'tango-dark t)
 
