@@ -32,17 +32,13 @@
 
 ;; Indentation (global)
 (define-key global-map (kbd "RET") 'newline-and-indent)
-(setq indent-tabs-mode nil)
+(setq indent-tabs-mode t)
 (setq tab-width 8)
 
 ;; Indentation (C)
+(setq c-default-style "linux")
+(setq c-basic-offset 8)
 (setq c-indent-level 8)
-
-(setq c-brace-imaginary-offset 0)
-(setq c-brace-offset -8)
-(setq c-argdecl-indent 8)
-(setq c-label-offset -8)
-(setq c-continued-statement-offset 8)
 
 ;; Scrolling
 (setq redisplay-dont-pause t
