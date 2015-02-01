@@ -2,6 +2,7 @@
 (require 'cl)
 
 (load-theme 'tango-dark t)
+(setq inhibit-splash-screen t)
 
 ;; Map C-h to backspace
 (global-set-key [(control h)] 'delete-backward-char)
