@@ -12,6 +12,7 @@ export SHELL=/bin/zsh
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
+export EDITOR="emacs -nw"
 
 bindkey ';5D' backward-word
 bindkey ';5C' forward-word
