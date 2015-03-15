@@ -20,4 +20,5 @@ setopt hist_ignore_all_dups
 #setopt correctall
 setopt hist_ignore_space
 
-alias ls='pwd; ls --color'
+alias -g ls='pwd; ls --color'
+alias -g e='emacs -nw'
