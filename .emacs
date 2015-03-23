@@ -4,6 +4,10 @@
 (load-theme 'tango-dark t)
 (setq inhibit-splash-screen t)
 
+;; Copy/paste from/to X for console emacs
+;; http://www.emacswiki.org/emacs-en/download/xclip.el
+(load-file "~/.emacs.d/xclip.el")
+
 ;; Map C-h to backspace
 (global-set-key [(control h)] 'delete-backward-char)
 
