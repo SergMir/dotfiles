@@ -13,7 +13,7 @@
 
 ;; Line numbers
 (global-linum-mode 1)
-(setq linum-format "%4d")
+(setq linum-format "%4d ")
 
 ;; Remove toolbar
 (tool-bar-mode -1)
