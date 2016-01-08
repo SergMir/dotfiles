@@ -1,5 +1,5 @@
 ;; Common Lisp
-(require 'cl)
+;(require 'cl)
 
 (load-theme 'tango-dark t)
 (setq inhibit-splash-screen t)
@@ -8,8 +8,10 @@
 ;; http://www.emacswiki.org/emacs-en/download/xclip.el
 (load-file "~/.emacs.d/xclip.el")
 
-;; Map C-h to backspace
+;; Remap basic keys
 (global-set-key [(control h)] 'delete-backward-char)
+(global-set-key [(control w)] 'backward-kill-word)
+(define-key isearch-mode-map [(control h)] 'isearch-delete-char)
 
 ;; Line numbers
 (global-linum-mode 1)
