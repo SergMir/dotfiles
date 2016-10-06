@@ -10,7 +10,6 @@
 
 ;; Remap basic keys
 (global-set-key [(control h)] 'delete-backward-char)
-(global-set-key [(control w)] 'backward-kill-word)
 (define-key isearch-mode-map [(control h)] 'isearch-delete-char)
 
 ;; Line numbers
@@ -59,3 +58,5 @@
 ;; whitespace-mode
 ;(global-whitespace-mode t)
 ;(setq whitespace-style '(trailing tabs tab-mark space-after-tab space-before-tab indentation))
+
+(package-initialize)
