@@ -41,8 +41,6 @@
 (setq ido-max-work-file-list 0)
 
 ;; Indentation (global)
-(define-key global-map (kbd "RET") 'newline-and-indent)
-(setq indent-tabs-mode t)
 (setq tab-width 8)
 
 ;; Indentation (C)
