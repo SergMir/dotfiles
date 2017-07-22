@@ -21,6 +21,6 @@ setopt hist_ignore_all_dups
 #setopt correctall
 setopt hist_ignore_space
 
-alias -g ls='pwd; ls --color'
+alias -g ls='ls --color'
 alias -g e='emacs -nw'
 alias -g grep='grep --color'
