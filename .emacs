@@ -13,7 +13,7 @@
 (define-key isearch-mode-map [(control h)] 'isearch-delete-char)
 
 ;; Line numbers
-(global-linum-mode 1)
+(global-linum-mode 0)
 (setq linum-format "%4d ")
 
 ;; Remove toolbar
@@ -62,5 +62,8 @@
 ;; whitespace-mode
 ;(global-whitespace-mode t)
 ;(setq whitespace-style '(trailing tabs tab-mark space-after-tab space-before-tab indentation))
+
+;; Performance
+(setq font-lock-maximum-decoration 6)
 
 (package-initialize)
