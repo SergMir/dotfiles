@@ -23,8 +23,13 @@
 (defun yes-or-no-p (prompt)
   (y-or-n-p prompt))
 
-;; Turn off backup files creation
+;; Turn off backup, autosave and lock files creation
+(setq backup-inhibited t)
 (setq make-backup-files nil)
+(setq auto-save-list-file-prefix nil)
+(setq auto-save-mode nil)
+(setq auto-save-default nil)
+(setq create-lockfiles nil)
 
 ;; Highlight matching parenthesis
 (show-paren-mode 1)
