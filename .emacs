@@ -89,8 +89,6 @@
 
 (reverse-input-method 'russian-computer)
 
-(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-
 (package-initialize)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
