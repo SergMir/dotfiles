@@ -1,6 +1,15 @@
 ;; Common Lisp
 ;(require 'cl)
 
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+
+(setq lsp-keymap-prefix "M-l")
+(require 'lsp-mode)
+
+(require 'lsp-ui)
+(use-package lsp-ui)
+
 (load-theme 'tango-dark t)
 (setq inhibit-splash-screen t)
 
