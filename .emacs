@@ -10,6 +10,21 @@
 (require 'lsp-ui)
 (use-package lsp-ui)
 
+(use-package company
+  :ensure
+  :custom
+  (company-idle-delay 0.0) ;; how long to wait until popup
+  (company-minimum-prefix-length 1)
+  ;; (company-begin-commands nil) ;; uncomment to disable popup
+  :bind
+  (:map company-active-map
+	("C-n". company-select-next)
+	("C-p". company-select-previous))
+  (:map company-mode-map
+	("<tab>". indent-for-tab-command)
+	("TAB". indent-for-tab-command))
+  )
+
 (load-theme 'tango-dark t)
 (setq inhibit-splash-screen t)
 
@@ -104,5 +119,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(company use-package pos-tip lsp-ui))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
