@@ -1,3 +1,6 @@
+;; package-install:
+;; company, lsp-ui, pos-tip, rust-mode, use-package
+
 ;; Common Lisp
 ;(require 'cl)
 
